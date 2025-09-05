@@ -1,0 +1,40 @@
+body {
+    margin: auto;
+}
+
+nav {
+    background: #0c4ca3;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+li {
+    padding: 15px;
+}
+
+.boder {
+    border-right: 1px solid grey;
+}
+
+.danhmuc-lienket {
+    color: white;
+    text-decoration: none;
+}
+
+.banner-qc {
+    display: flex;
+    list-style: none;
+}
+
+.qc {
+    display: flex;
+    list-style: none;
+}
+
+header {
+    border-bottom: 15px solid #f1f1f2;
+}
