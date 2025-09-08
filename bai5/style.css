@@ -165,14 +165,17 @@ main {
 }
 
 .thong-bao {
-    display: flex;
-    background: #ada4a4;
     margin-top: 100px;
+}
+
+.anh-tb {
+    display: block;
 }
 
 .bang-thong-bao {
     display: flex;
     justify-content: baseline;
+    background: #f1f1f2;
 }
 
 .ts {

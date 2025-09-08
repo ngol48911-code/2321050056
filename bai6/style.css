@@ -1,0 +1,14 @@
+.cong-cu {
+    gap: 10px;
+    display: flex;
+}
+
+.tim-kiem {
+    display: flex;
+    gap: 10px;
+}
+
+.phan-tren {
+    display: flex;
+    gap: 500px;
+}
