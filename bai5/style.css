@@ -1,40 +1,287 @@
 body {
-    margin: auto;
+    margin: 0 auto;
+    font-family: Roboto, Arial, Tahoma, sans-serif;
+    background-color: #f1f1f2;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 15px solid #f1f1f2;
+    text-align: center;
+}
+
+header img {
+    max-width: 900px;
+    height: auto;
+    display: inline-block;
+}
+
+.qc {
+    display: flex;
 }
 
 nav {
-    background: #0c4ca3;
+    background-color: #0c4ca3;
 }
 
 ul {
     display: flex;
-    list-style: none;
     justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 li {
-    padding: 15px;
-}
-
-.boder {
-    border-right: 1px solid grey;
+    padding: 15px 20px;
 }
 
 .danhmuc-lienket {
     color: white;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
-.banner-qc {
+.danhmuc-lienket:hover {
+    color: #ffd700;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.news {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tin-tuc {
     display: flex;
-    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
 }
 
-.qc {
+.tin-tuc a.tin-tuc {
+    font-size: 24px;
+    font-weight: bold;
+    color: #024da1;
+    text-decoration: none;
+    border-bottom: 2px solid #0f75bc;
+    padding: 0;
+}
+
+.xem-them {
+    font-size: 14px;
+    color: #939597;
+    text-decoration: none;
+}
+
+.mucmoi {
     display: flex;
-    list-style: none;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-header {
-    border-bottom: 15px solid #f1f1f2;
+.muc-nho {
+    flex: 1;
+    padding: 0;
+}
+
+.muc-nho img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.muc-nho h2 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.muc-nho h2 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.muc-nho ul {
+    display: block;
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.muc-nho li {
+    padding: 5px 0;
+}
+
+.muc-nho li a {
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.muc-nho li a:hover {
+    color: #0c4ca3;
+}
+
+.muc-luc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #6d4b4b;
+    padding: 10px 15px;
+}
+
+.muc-anh {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.muc-link {
+    display: block;
+    border-radius: 8px;
+}
+
+.muc-link img {
+    display: block;
+    width: 100px;
+    height: auto;
+}
+
+.lienket-wedsite {
+    font-size: 10px;
+}
+
+.thong-bao {
+    display: flex;
+    background: #ada4a4;
+    margin-top: 100px;
+}
+
+.bang-thong-bao {
+    display: flex;
+    justify-content: baseline;
+}
+
+.ts {
+    display: flex;
+    gap: 170px;
+}
+
+.tieu-de-tuyen-sinh {
+    display: flex;
+    gap: 500px;
+    color: #0c4ca3;
+}
+
+.content-tuyensinh {
+    display: block;
+}
+
+.body-tuyen-sinh {
+    display: flex;
+    text-align: center;
+}
+
+.content-tuyensinh img {
+    text-align: center;
+    width: 32vh;
+}
+
+.tieu-de-sv {
+    display: flex;
+    gap: 1000px;
+    color: #0c4ca3;
+}
+
+.content-sv {
+    display: block;
+}
+
+.body-sv {
+    display: flex;
+    text-align: center;
+}
+
+.content-sv img {
+    text-align: center;
+    width: 51vh;
+}
+
+.body-dt {
+    display: flex;
+    text-align: center;
+    gap: 5px;
+}
+
+.video-link {
+    display: flex;
+    background-color: black;
+    padding: 10px;
+}
+
+.kich-thuoc3 {
+    width: 1020px;
+    height: 160px;
+    margin: 0 auto 20px;
+}
+
+.link a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    border-bottom: 1px dotted white;
+}
+
+.video p {
+    color: white;
+    border-bottom: 1px dotted white;
+    padding: 5px;
+}
+
+.link {
+    border-left: 1px dotted white;
+}
+
+.mxh {
+    display: flex;
+}
+
+.tong-ket {
+    display: flex;
+    gap: 100px;
+    background: #0f75bc;
+}
+
+.sizemap {
+    width: 283px;
+    height: 155px;
+}
+
+.thong-tin-khac1 {
+    display: flex;
+    gap: 200px;
+    text-decoration: none;
+}
+
+.tong-ket1 {
+    display: flex;
+    gap: 50px;
+}
+
+.m {
+    color: white;
 }
