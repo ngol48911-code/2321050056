@@ -11,4 +11,228 @@
 .phan-tren {
     display: flex;
     gap: 500px;
+    background: black
+}
+
+.tuychon {
+    display: flex;
+    margin-right: 100px;
+    gap: 250px;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.phan-than {
+    margin-top: 10x;
+    border-radius: 10px;
+    background: black;
+    display: flex;
+    gap: 10px;
+}
+
+.congcu1 {
+    display: flex;
+    gap: 10px;
+}
+
+.library {
+    border-radius: 5px;
+    background-color: rgb(73, 70, 70);
+    color: white;
+}
+
+.creat {
+    border-radius: 5px;
+    background-color: rgb(73, 70, 70);
+    color: white;
+}
+
+span {
+    color: white;
+}
+
+.tuychon1 {
+    display: flex;
+    gap: 5px;
+}
+
+.tuychondanhsach {
+    border-radius: 5px;
+    background: rgb(124, 124, 138);
+}
+
+.theloainhac1 {
+    display: flex;
+}
+
+.theloainhac2 {
+    display: flex;
+}
+
+.nhaccanhan {
+    border-radius: 5px;
+    background: black;
+    margin: 10px 7px;
+}
+
+.phan1 {
+    padding: 10px;
+    border: solid rgb(212, 188, 188);
+    background: rgb(80, 75, 75);
+    border-radius: 5px;
+}
+
+.phan2 {
+    padding: 8px;
+    border: solid rgb(212, 188, 188);
+    border-radius: 5px;
+    background: rgb(80, 75, 75);
+}
+
+.phan21 {
+    background: rgb(92, 87, 87);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nhaccanhan {
+    padding-right: 25px;
+    border-radius: 5px;
+    background-color: ;
+}
+
+#siu {
+    font-size: small
+}
+
+#siu1 {
+    font-size: large;
+}
+
+.kel {
+    margin-top: 16px;
+}
+
+.bodykel {
+    margin-top: 10Px;
+    display: flex;
+}
+
+.bodykel1 span {
+    font-size: 5px;
+}
+
+.bodykel1 {
+    margin-right: 5px;
+}
+
+.bodykel1 img {
+    border-radius: 5px;
+}
+
+.kelandshow {
+    gap: 485px;
+    display: flex;
+}
+
+
+/* fdghjesrfbkn */
+
+.jump {
+    margin-top: 16px;
+}
+
+.bodyjump {
+    margin-top: 10Px;
+    display: flex;
+}
+
+.bodyjump1 span {
+    font-size: 5px;
+}
+
+.bodyjump1 {
+    margin-right: 5px;
+}
+
+.bodyjump1 img {
+    border-radius: 5px;
+}
+
+.jumpandshow {
+    gap: 445px;
+    display: flex;
+}
+
+
+/* .phan3 {
+    padding: 8px;
+    border: solid rgb(212, 188, 188);
+    border-radius: 1px;
+    background: rgb(80, 75, 75);
+} */
+
+.phan3 {
+    display: block;
+    padding: 10px;
+    border-radius: 1px;
+    border: solid rgb(212, 188, 188);
+    border-bottom: 10px;
+}
+
+.liked1 {
+    margin-bottom: 10px;
+}
+
+.switch {
+    border-radius: 5px;
+    background: rgb(124, 124, 138);
+    display: inline-block;
+}
+
+.phan3 div {
+    margin: 10px;
+}
+
+#uuu {
+    font-size: small;
+}
+
+.ketthuc img {
+    display: flex;
+    border-radius: 5px;
+}
+
+.j97 {
+    font-size: 10px;
+    color: white;
+}
+
+.ketthuc {
+    display: flex;
+    background: black;
+}
+
+.dangphat {
+    display: flex;
+    gap: 10px;
+    margin-right: 250px;
+}
+
+.phanchay {
+    display: block;
+    gap: 10px;
+}
+
+.phanamthanh {
+    display: flex;
+    gap: 10px;
+    margin-left: 300px;
+}
+
+.amluong {
+    display: flex;
 }
