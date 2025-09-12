@@ -181,6 +181,9 @@ span {
     border-radius: 1px;
     border: solid rgb(212, 188, 188);
     border-bottom: 10px;
+    width: 98%;
+    height: 475px;
+    overflow: scroll;
 }
 
 .liked1 {
@@ -231,8 +234,25 @@ span {
     display: flex;
     gap: 10px;
     margin-left: 300px;
+    padding: 5px;
 }
 
 .amluong {
     display: flex;
+}
+
+.tatcanhac {
+    height: 300px;
+    width: 99%;
+    overflow: scroll;
+}
+
+.nhac span {
+    font-size: 12px;
+}
+
+.phan22 {
+    width: 98%;
+    height: 330px;
+    overflow: scroll;
 }
