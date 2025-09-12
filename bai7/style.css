@@ -1,0 +1,75 @@
+.modau {
+  background: black;
+  width: 100%;
+}
+.danhsachtuychon {
+  display: flex;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.luachon {
+  padding: 12px 6px;
+  background: rgb(26, 25, 25);
+  margin-right: 5px;
+}
+.modau {
+  display: flex;
+}
+span {
+  color: rgb(180, 169, 169);
+}
+.luachon span :hover {
+  color: red;
+}
+.chucnangkhac {
+  background: white;
+}
+.timkiem {
+  padding: 12px 6px;
+}
+.cacchucnangkhac {
+  margin-left: 80px;
+  display: flex;
+}
+.thongbao {
+  margin-top: 12px;
+}
+.muagoi {
+  margin-top: 10px;
+  width: 67px;
+  height: 25px;
+  margin-left: 7px;
+  background: red;
+  border-radius: 5px;
+}
+.dangnhap {
+  margin-top: 12px;
+  margin-left: 5px;
+}
+.dangnhap a :hover {
+  color: red;
+}
+.muagoi :hover {
+  background: orange;
+}
+
+.anhfpt {
+  border-radius: 50px;
+}
+.phanthan {
+  margin-top: 10px;
+}
+html {
+  background: black;
+}
+.tongthe {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.cacchuongtrinh {
+  margin-top: 10px;
+}
+img {
+  border-radius: 8px;
+}
