@@ -1,0 +1,65 @@
+main {
+  margin: 0 auto;
+  width: 500px;
+}
+img {
+  width: 500px;
+}
+.yeucau {
+  margin: 0 auto;
+  padding: 10px;
+  display: block;
+}
+.chuto {
+  font-size: 30px;
+}
+.thongtin {
+  width: 500px;
+  height: 1200px;
+  border: solid rgb(212, 188, 188);
+  border-radius: 7px;
+  background: rgb(176, 163, 163);
+}
+.hovaten {
+  display: flex;
+  margin: 0 auto;
+}
+.ho {
+  margin-left: 20px;
+}
+.ten {
+  margin-right: 20px;
+  margin-left: 70px;
+}
+.chu1 {
+  text-align: center;
+}
+.ngaysinh span {
+  width: 20px;
+}
+.date_of_birth {
+  margin-top: 10px;
+}
+.thoigian {
+  display: flex;
+  gap: 100px;
+}
+.female {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid rgb(212, 188, 188);
+}
+.thongtingender {
+  display: flex;
+  gap: 100px;
+}
+.emailandpass {
+  margin-bottom: 10px;
+}
+.email.pass {
+  border-radius: 5px;
+  border: solid rgb(212, 188, 188);
+  padding: 10px;
+}

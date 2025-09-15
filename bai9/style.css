@@ -1,0 +1,22 @@
+.all {
+  padding: 60px 50px;
+  background: rgb(211, 189, 189);
+}
+main {
+  display: flex;
+  gap: 400px;
+}
+.log span {
+  font-size: 50px;
+  text-align: center;
+}
+dangnhap1 {
+  width: 200px;
+  border-radius: 5px;
+  border: solid rgb(212, 188, 188);
+  padding: 10px;
+}
+.dangnhap {
+  display: block;
+  gap: 20px;
+}

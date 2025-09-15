@@ -58,6 +58,7 @@ span {
 }
 .phanthan {
   margin-top: 10px;
+  display: block;
 }
 html {
   background: black;
@@ -73,3 +74,61 @@ html {
 img {
   border-radius: 8px;
 }
+.tieudenoidung {
+  font-size: 24.5px;
+}
+.siu {
+  margin-top: 50px;
+}
+.tieudephim {
+  font-size: 16px;
+}
+.phimcancay {
+  display: block;
+  gap: 12px;
+  margin-right: 15px;
+}
+.cacphimcancay {
+  display: flex;
+  width: 1199px;
+  height: 300px;
+  overflow: scroll;
+}
+.phimcancay a :hover {
+  opacity: 0.5;
+}
+.moiramat {
+  display: flex;
+  gap: 15px;
+  width: 1199px;
+  height: 200px;
+  overflow: scroll;
+}
+.danhmuc {
+  display: flex;
+  width: 1199px;
+  overflow: scroll;
+  height: 162px;
+  gap: 15px;
+}
+
+span {
+  color: white;
+}
+.phanket {
+  display: block;
+}
+.phanket1 {
+  display: flex;
+  gap: 150px;
+}
+.play {
+  display: block;
+}
+.pt a :hover {
+  color: red;
+}
+footer {
+  margin-top: 15px;
+}
+.pt
