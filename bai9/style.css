@@ -20,3 +20,10 @@ dangnhap1 {
   display: block;
   gap: 20px;
 }
+.dangnhap1 input {
+  width: 300px; /* Hoặc 100% để tự động co giãn theo chiều rộng của container */
+  height: 50px;
+  font-size: 16px; /* Nên tăng cỡ chữ để phù hợp với kích thước ô input */
+  padding: 10px; /* Thêm padding để văn bản không bị dính vào mép */
+  border-radius: 7px;
+}
