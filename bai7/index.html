@@ -6,9 +6,12 @@
     <title>Document</title>
   </head>
   <body>
-    <script src="scrip.js"></script>
+    <script>
+      document.writeln("chao anh em nhe");
+    </script>
     <script>
       //de viet chu thich js dung ki tu //
+      document.writeln("chao anh em nhe <br>");
       document.writeln("hello world " + "<br>");
       let hoTen = "Ngo Gia Loc";
       document.writeln(hoTen + "<br>");
@@ -24,13 +27,14 @@
       document.writeln(!(soThuHai !== soThuNhat) + "<br>");
       let diaChiEmTien = {
         thanhPho: " Ha Noi",
+        huyen: " siu ",
       };
       let thongTinSinhVien = {
         hoTen: "Nguyen Tien ",
         tuoi: 20,
         gioiTinh: true,
         lop: " kinh te thong tin",
-        diaChi: { thanhPho: " Ha Noi" },
+        diaChi: { thanhPho: " Ha Noi", huyen: " siu " },
       };
       thongTinSinhVien.diaChi = diaChiEmTien;
       let namNay = 2025;
@@ -44,10 +48,13 @@
           "nha o " +
           thongTinSinhVien.diaChi.thanhPho +
           "tuoi" +
+          thongTinSinhVien.tuoi +
+          "huyen" +
+          thongTinSinhVien.diaChi.huyen +
           "<br>"
       );
-      let soThuHai = "11";
-      let soThuHaiSo = parseInt(soThuHai);
+      let soThuHaiMoi = "11";
+      let soThuHaiSo = parseInt(soThuHaiMoi);
       document.writeln(typeof soThuHaiSo);
     </script>
   </body>

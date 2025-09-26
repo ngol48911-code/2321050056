@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="scrip.js"></script>
+    <script>
+      let danhSachKhachHang = {
+        thongTin: {
+          hoTen: " Ngo Gia Loc ",
+          SDT: "02323534",
+          trangThaiThanhVien: true,
+        },
+      };
+
+      let thongTinKhachHang = {
+        hoTen: " Nguyen Van Tien ",
+        SDT: "02323534",
+        trangThaiThanhVien: true,
+      };
+
+      danhSachKhachHang.thongTin = thongTinKhachHang;
+
+      document.writeln(
+        "Thông tin khách hàng: " + danhSachKhachHang.thongTin.hoTen + "<br>"
+      );
+
+      let sanPham = {
+        sp1: {
+          MSP: "WEHFWNV",
+          tenSP: " Ca Phe",
+          soLuong: 400,
+          giaTien: 200,
+        },
+        sp2: {
+          MSP: "WEHFWNV",
+          tenSP: " mat cha",
+          soLuong: 40,
+          giaTien: 1000,
+        },
+        sp3: {
+          MSP: "WEHFWgedhNV",
+          tenSP: "tra sua ",
+          soLuong: 400,
+          giaTien: 100,
+        },
+      };
+
+      let danhSachSanPham = {
+        thongTinSP: {
+          sp1: {
+            MSP: "WEHFWNV",
+            tenSP: " Ca Phe",
+            soLuong: 400,
+            giaTien: 200,
+          },
+          sp2: {
+            MSP: "WEHFWNV",
+            tenSP: " mat cha",
+            soLuong: 40,
+            giaTien: 1000,
+          },
+          sp3: {
+            MSP: "WEHFWgedhNV",
+            tenSP: "tra sua ",
+            soLuong: 400,
+            giaTien: 100,
+          },
+        },
+      };
+      let tongSP1 =
+        danhSachSanPham.thongTinSP.sp1.giaTien *
+        danhSachSanPham.thongTinSP.sp1.soLuong;
+      let tongSP2 =
+        danhSachSanPham.thongTinSP.sp2.giaTien *
+        danhSachSanPham.thongTinSP.sp2.soLuong;
+      let tongSP3 =
+        danhSachSanPham.thongTinSP.sp3.giaTien *
+        danhSachSanPham.thongTinSP.sp3.soLuong;
+
+      document.writeln(tongSP1 + " " + tongSP2 + " " + tongSP3);
+      danhSachSanPham.thongTinSP = sanPham;
+      let hoten = "Ngo Gia Loc";
+      document.writeln(hoten.length + "<br>");
+      let myString = "hello";
+      document.writeln(myString[3]);
+      document.writeln(myString.slice(0, 2));
+      document.writeln(myString.replace("hello", "xin chao  "));
+      document.writeln(myString.toUpperCase());
+      document.writeln(myString.indexOf("e"));
+      //   kiem tra chuoi co ton tai ki tu hay khong
+      document.writeln(myString.includes("h"));
+      //   tach chuoi thanh mang
+      document.writeln(myString.split(""));
+      document.writeln(myString.startsWith("l"));
+      let pi = 3.1274673;
+      document.writeln(pi.toFixed(2));
+      let toDay = new Date();
+      document.writeln(toDay);
+      document.writeln(toDay.getMonth());
+    </script>
+  </body>
+</html>
