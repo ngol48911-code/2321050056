@@ -71,6 +71,12 @@
           },
         },
       };
+      if (danhSachKhachHang.thongTin.trangThaiThanhVien == true) {
+        document.writeln(
+          danhSachKhachHang.thongTin.hoTen.replace("Nguyen Van", "khach Vip")
+        );
+      }
+      document.writeln(danhSachKhachHang.thongTin.hoTen);
       let tongSP1 =
         danhSachSanPham.thongTinSP.sp1.giaTien *
         danhSachSanPham.thongTinSP.sp1.soLuong;
@@ -84,11 +90,12 @@
       document.writeln(tongSP1 + " " + tongSP2 + " " + tongSP3);
       danhSachSanPham.thongTinSP = sanPham;
       let hoten = "Ngo Gia Loc";
+      document.writeln(hoten[hoten.length - 1]);
       document.writeln(hoten.length + "<br>");
       let myString = "hello";
       document.writeln(myString[3]);
       document.writeln(myString.slice(0, 2));
-      document.writeln(myString.replace("hello", "xin chao  "));
+      document.writeln(myString.replace("hello", "xin chao"));
       document.writeln(myString.toUpperCase());
       document.writeln(myString.indexOf("e"));
       //   kiem tra chuoi co ton tai ki tu hay khong
@@ -101,6 +108,9 @@
       let toDay = new Date();
       document.writeln(toDay);
       document.writeln(toDay.getMonth());
+      let sn = 2005;
+      let tinht = toDay.getFullYear() - sn;
+      document.writeln(tinht);
     </script>
   </body>
 </html>

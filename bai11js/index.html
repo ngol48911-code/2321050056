@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="scrip.js"></script>
+    <script>
+      let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+      let ten = "Ngo Gia Loc ";
+      let thongTin = {
+        ten: "Ngo Gia Loc ",
+      };
+
+      // Kiểm tra arr có phải là mảng không
+      document.writeln("arr có phải mảng? " + Array.isArray(arr) + "<br>");
+
+      // Kiểm tra độ dài mảng
+      document.writeln("Độ dài mảng: " + arr.length + "<br>");
+
+      // Lấy phần tử thứ 3 (index = 2)
+      document.writeln("Phần tử thứ 3 trong mảng: " + arr[2] + "<br>");
+
+      // Tìm vị trí xuất hiện đầu tiên và cuối cùng
+      document.writeln(
+        "Vị trí xuất hiện đầu tiên của 3: " + arr.indexOf(3) + "<br>"
+      );
+      document.writeln(
+        "Vị trí xuất hiện cuối cùng của 3: " + arr.lastIndexOf(3) + "<br>"
+      );
+
+      // Thay đổi phần tử trong mảng
+      arr[3] = 6;
+      document.writeln("Mảng sau khi thay đổi: " + arr + "<br>");
+
+      // Các thao tác với concat, pop, push, reverse, shift
+      let a, b, c, d;
+      a = [1, 2, 3];
+      b = "JavaScrip";
+      c = [42, "js"];
+      d = a.concat(b, c);
+
+      d.pop(); // xoá phần tử cuối
+      d.push("noc"); // thêm phần tử cuối
+      d.reverse(); // đảo ngược mảng
+      d.shift(); // xoá phần tử đầu tiên
+
+      document.writeln("d có phải mảng? " + Array.isArray(d) + "<br>");
+      document.writeln("Giá trị của d: " + d + "<br>");
+      // Kiểm tra số cuối cùng có chẵn hay lẻ
+      let so1 = "100000000001";
+      let soCuoi = parseInt(so1[so1.length - 1]); // sửa so → so1
+      if (soCuoi % 2 === 0) {
+        document.writeln(so1 + " là số chẵn<br>");
+      } else {
+        document.writeln(so1 + " là số lẻ<br>");
+      }
+      let now = new Date().getHours();
+      if (now > 5 && now <= 10) {
+        document.writeln("Chào buổi sáng<br>");
+      } else if (now > 10 && now < 13) {
+        document.writeln("Chào buổi trưa<br>");
+      } else if (now >= 13 && now < 17) {
+        document.writeln("chao buoi chieu ");
+      } else if (now >= 17 && now < 22) {
+        document.writeln("chao buoi toi ");
+      } else document.writeln("chao buoi toi ");
+      let diemA = parseFloat(prompt("nhap diem a"));
+      let diemB = parseFloat(prompt("nhap diem b"));
+      let diemC = parseFloat(prompt("nhap diem c"));
+      while()
+      let diem = diemA * 0.6 + diemB * 0.3 + diemC * 0.1;
+      if (diem > 8 && diem <= 10) {
+        document.writeln("xep loai A");
+      } else if (diem <= 8 && diem > 7) {
+        document.writeln("xep loai B");
+      } else if (diem <= 7 && diem > 5) {
+        document.writeln("xep loai C");
+      } else if (diem <= 5 && diem > 4) {
+        document.writeln("xep loai D");
+      } else if (diem <= 4 && diem > 0) {
+        document.writeln("xep loai F");
+      } else {
+        document.writeln("khong hop le ");
+      }
+    </script>
+  </body>
+</html>
