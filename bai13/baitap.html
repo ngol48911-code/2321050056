@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>tinh diem chu</h1>
+    <h2>biet thong :A*0.6+B*0.3+c*0.1</h2>
+    <div>
+      <p>diem a cua ban</p>
+      <input type="number" id="diema" />
+    </div>
+    <div>
+      <p>diem b cua ban</p>
+      <input type="number" id="diemb" />
+    </div>
+    <div>
+      <p>diem c cua ban</p>
+      <input type="number" id="diemc" />
+    </div>
+    <div>
+      <button onclick="xepLoai()">xep loai</button>
+    </div>
+    <div>ket qua <input type="text" id="ketqua" /></div>
+    <script>
+      let diem;
+      function xepLoai() {
+        let diema = Number(document.getElementById("diema").value);
+        let diemb = Number(document.getElementById("diemb").value);
+        let diemc = Number(document.getElementById("diemc").value);
+        diem = diema * 0.6 + diemb * 0.3 + diemc * 0.1;
+        canhBao = "";
+        if (!diema) {
+          canhBao += "vui long nhap lai diem a  ";
+        }
+        if (!diemb) {
+          canhBao += "vui long nhap lai diem b  ";
+        }
+        if (!diemc) {
+          canhBao += "vui long nhap lai diem c ";
+        }
+        if (canhBao) {
+          alert(canhBao);
+        }
+        if (
+          (diema > 10 || diema < 0) &&
+          (diemb > 10 || diemb < 0) &&
+          (diemc > 10 || diemc < 0)
+        ) {
+          document.writeln("loi nhap lai ");
+        } else {
+          if (diem > 8 && diem <= 10) {
+            document.getElementById("ketqua").value = "A";
+          } else if (diem <= 8 && diem > 7) {
+            document.getElementById("ketqua").value = "B";
+          } else if (diem <= 7 && diem > 5) {
+            document.getElementById("ketqua").value = "C";
+          } else if (diem <= 5 && diem > 4) {
+            document.getElementById("ketqua").value = "D";
+          } else if (diem <= 4 && diem > 0) {
+            document.getElementById("ketqua").value = "F";
+          } else {
+            document.getElementById("ketqua").value = "Khong hop le     ";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

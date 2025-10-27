@@ -121,3 +121,8 @@ function chao3(ten, namSinh, vo, con) {
   );
 }
 chao3("trinh tran phuong tuan ", 1997, "thien an ", "be son");
+function tennn() {
+  let name = prompt("ten cua anh noc ");
+  return name;
+}
+document.writeln(tennn());

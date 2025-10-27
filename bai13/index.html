@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <p>nhap so thu nhat</p>
+      <input type="text" id="soThuNhat" value="10" />
+    </div>
+    <div>
+      <p>nhap so thu hai</p>
+      <input type="text" id="soThuHai" />
+    </div>
+    <div>
+      <button onclick="tinhTong()">tinh tong</button>
+    </div>
+    <div>ket qua <input type="text" id="ketQua" /></div>
+    <script>
+      function tinhTong() {
+        let soThuNhat = Number(document.getElementById("soThuNhat").value);
+        let soThuHai = Number(document.getElementById("soThuHai").value);
+        document.writeln(soThuNhat);
+        document.writeln(soThuHai);
+        tong = soThuHai + soThuNhat;
+        canhBao = "";
+        if (!soThuNhat) {
+          canhBao += "vui long nhap lai so thu nhat ";
+        }
+        if (!soThuHai) {
+          canhBao += "vui long nhap lai so thu hai ";
+        }
+        if (canhBao) {
+          alert(canhBao);
+        }
+        document.getElementById("ketQua").value = tong;
+      }
+    </script>
+  </body>
+</html>
