@@ -3,39 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Máy Tính Đa Năng</title>
   </head>
   <body>
     <div>
       <p>nhap so thu nhat</p>
-      <input type="text" id="soThuNhat" value="10" />
+      <input type="text" id="soThuNhat" />
     </div>
     <div>
       <p>nhap so thu hai</p>
       <input type="text" id="soThuHai" />
     </div>
     <div>
-      <button onclick="tinhTong()">tinh tong</button>
+      <button onclick="phepTinh('tong')">tinh tong</button>
+      <button onclick="phepTinh('hieu')">tinh hieu</button>
+      <button onclick="phepTinh('tich')">tinh tich</button>
+      <button onclick="phepTinh('thuong')">tinh thuong</button>
     </div>
     <div>ket qua <input type="text" id="ketQua" /></div>
     <script>
-      function tinhTong() {
-        let soThuNhat = Number(document.getElementById("soThuNhat").value);
-        let soThuHai = Number(document.getElementById("soThuHai").value);
-        document.writeln(soThuNhat);
-        document.writeln(soThuHai);
-        tong = soThuHai + soThuNhat;
-        canhBao = "";
-        if (!soThuNhat) {
-          canhBao += "vui long nhap lai so thu nhat ";
+      function phepTinh(loaiPhepToan) {
+        let valueSo1 = document.getElementById("soThuNhat").value;
+        let valueSo2 = document.getElementById("soThuHai").value;
+        let canhBao = "";
+        if (valueSo1 === "") {
+          canhBao += "vui long nhap so thu nhat. ";
         }
-        if (!soThuHai) {
-          canhBao += "vui long nhap lai so thu hai ";
+        if (valueSo2 === "") {
+          canhBao += "vui long nhap so thu hai. ";
         }
+
         if (canhBao) {
           alert(canhBao);
+          document.getElementById("ketQua").value = "";
+          return;
         }
-        document.getElementById("ketQua").value = tong;
+
+        let soThuNhat = Number(valueSo1);
+        let soThuHai = Number(valueSo2);
+        let ketQuaTinhToan = 0;
+        switch (loaiPhepToan) {
+          case "tong":
+            ketQuaTinhToan = soThuNhat + soThuHai;
+            break;
+          case "hieu":
+            ketQuaTinhToan = soThuHai - soThuNhat;
+            break;
+          case "tich":
+            ketQuaTinhToan = soThuNhat * soThuHai;
+            break;
+          case "thuong":
+            if (soThuHai === 0) {
+              alert("Lỗi: Không thể chia cho số thứ hai là 0.");
+              document.getElementById("ketQua").value = "Lỗi chia 0";
+              return;
+            }
+            ketQuaTinhToan = soThuNhat / soThuHai;
+            break;
+          default:
+            ketQuaTinhToan = "Lỗi phép toán";
+            break;
+        }
+        document.getElementById("ketQua").value = ketQuaTinhToan;
       }
     </script>
   </body>

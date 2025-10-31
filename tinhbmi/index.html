@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <p>chieu cao</p>
+        <input type="text" id="chieucao" placeholder="m" />
+      </div>
+      <div>
+        <p>can nang</p>
+        <input type="text" id="cannang" placeholder="kg" />
+      </div>
+      <div><button onclick="xepLoai()">kiem tra BMi</button></div>
+      <div><input type="text" id="ketqua" /> ket qua</div>
+      <div><img class="anh" src="" alt="" /></div>
+    </div>
+    <script>
+      const newImg = document.createAttribute("img");
+      function xepLoai() {
+        const chieuCao = document.getElementById("chieucao").value;
+        const canNang = document.getElementById("cannang").value;
+        const bmi = canNang / (chieuCao * chieuCao);
+        // document.getElementById("ketqua")=bmi
+        if (bmi < 18.5) {
+          document.getElementById("ketqua")="thieu can"
+          document.
+        }
+      }
+    </script>
+  </body>
+</html>

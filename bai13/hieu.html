@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <p>nhap so thu nhat</p>
+      <input type="text" id="so1" />
+    </div>
+    <div>
+      <p>nhap so thu hai</p>
+      <input type="text" id="so2" />
+    </div>
+    <div>
+      <button onclick="tinhHieu()">tinh hieu</button>
+    </div>
+    <div>ket qua <input type="text" id="kq" /></div>
+    <script>
+      function tinhHieu() {
+        // Lấy giá trị chuỗi (string) từ input trước
+        let valueSo1 = document.getElementById("so1").value;
+        let valueSo2 = document.getElementById("so2").value;
+
+        let canhBao = "";
+
+        // 1. Kiểm tra rỗng (nếu chuỗi rỗng thì canhBao sẽ được thêm)
+        if (valueSo1 === "") {
+          canhBao += "vui long nhap lai so thu nhat ";
+        }
+        if (valueSo2 === "") {
+          canhBao += "vui long nhap lai so thu hai ";
+        }
+
+        if (canhBao) {
+          alert(canhBao);
+          // Xóa kết quả cũ nếu có lỗi
+          document.getElementById("kq").value = "";
+          return; // Dừng hàm lại nếu có lỗi
+        }
+        let soThuNhat = Number(valueSo1);
+        let soThuHai = Number(valueSo2);
+
+        // 3. Thực hiện phép tính
+        let hieu = soThuHai - soThuNhat;
+
+        // 4. HIỂN THỊ KẾT QUẢ - Sửa lỗi ID: dùng "kq"
+        document.getElementById("kq").value = hieu;
+      }
+    </script>
+  </body>
+</html>
