@@ -20,10 +20,6 @@
         width: 100px;
         height: 150px;
       }
-
-      .chisocothe {
-        display: flex;
-      }
     </style>
     <title>Document</title>
   </head>
@@ -31,6 +27,7 @@
     <div class="container">
       <div class="thongso">
         <div class="chisocothe">
+          <h1>TINH CHI SO BMI</h1>
           <p>chieu cao</p>
           <input type="text" id="chieucao" placeholder="m" />
         </div>
@@ -39,8 +36,9 @@
           <input type="text" id="cannang" placeholder="kg" />
         </div>
         <div><button onclick="xepLoai()">kiem tra BMi</button></div>
+        <p>chi so BMI cua ban la</p>
         <div><input type="text" id="ketqua" /> ket qua</div>
-        <div><img class="anh" src="" alt="" /></div>
+        <div><img class="anh" src="./binhthuong.jpg" alt="" /></div>
       </div>
       <div></div>
     </div>
@@ -50,6 +48,7 @@
         let canNang = Number(document.getElementById("cannang").value);
         let bmi = canNang / (chieuCao * chieuCao);
         parseFloat(bmi);
+
         let canhBao = "";
         if (!chieuCao || chieuCao < 0) {
           canhBao += "vui long nhap chieu cao ";

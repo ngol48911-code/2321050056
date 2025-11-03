@@ -1,6 +1,7 @@
 header {
   width: 100%;
   background: black;
+  position: fixed;
 }
 
 .head {
@@ -50,10 +51,6 @@ select#tuychon {
   border: none;
   font-size: 16px;
   padding: 0;
-}
-select#tuychon option {
-  background: black; /* Đảm bảo các tùy chọn trong dropdown có nền đen */
-  color: white;
 }
 
 .congcu {
