@@ -215,3 +215,84 @@ span {
 footer {
   margin-top: 15px;
 }
+.coment {
+  color: white;
+}
+#container-poster {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#poster {
+  width: 100%;
+  display: block;
+}
+
+#content_poster {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px 30px 150px 20px;
+  box-sizing: border-box;
+}
+
+.film-content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.film-title {
+  font-size: 28px;
+  margin: 0;
+  color: #fff;
+  font-size: 50px;
+}
+
+.film-details {
+  margin: 10px 0;
+}
+
+.film-info-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 30px;
+}
+
+.film-info-row p {
+  margin: 0;
+  color: #fff;
+}
+
+.dot {
+  color: #fff;
+  font-size: 16px;
+}
+
+.film-actions {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 25px 10px 100px 0px;
+  z-index: 2;
+}
+
+.watch-btn {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.watch-btn {
+  font-size: 12px;
+  background: red;
+}

@@ -1,0 +1,17 @@
+<div class="film-content">
+  <h2 class="film-title">${phim.ten.trim()}</h2>
+  <div class="film-details">
+    <div class="film-info-row">
+      <p>${phim.namPhatHanh}</p>
+      <p>${phim.tuoi}+</p>
+      <p>${phim.quocGia}</p>
+      <p>${phim.theLoai.trim()}</p>
+    </div>
+  </div>
+  <div class="film-actions">
+    <button class="watch-btn">
+      <i class="fa-solid fa-play"></i>
+      Xem thêm
+    </button>
+  </div>
+</div>
