@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Xi măng Portland",
+    "short": "Xi măng chất lượng cao cho công trình.",
+    "description": "Xi măng Portland đạt chuẩn, phù hợp cho móng, sàn và cột. Đóng bao 50kg.",
+    "image": "pic/cement.jpg",
+    "price": "Liên hệ"
+  },
+  {
+    "id": 2,
+    "name": "Gạch xây",
+    "short": "Gạch nung chịu lực tốt.",
+    "description": "Gạch xây truyền thống, chịu lực, ổn định kích thước, thích hợp cho xây tường và hàng rào.",
+    "image": "pic/brick.jpg",
+    "price": "Liên hệ"
+  },
+  {
+    "id": 3,
+    "name": "Sắt thép",
+    "short": "Thép cuộn và thép cây chất lượng.",
+    "description": "Thép cuộn, thép cây các loại, đạt tiêu chuẩn Việt Nam và quốc tế.",
+    "image": "pic/steel.jpg",
+    "price": "Liên hệ"
+  }
+]

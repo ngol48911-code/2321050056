@@ -1,0 +1,52 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background: #f7f7f7;
+  height: 100vh;
+  font-size: 30px;
+}
+
+.login {
+  display: flex;
+  justify-content: center; /* canh ngang */
+  align-items: center; /* canh dọc */
+  min-height: 100vh; /* giúp form nằm giữa dọc */
+}
+
+.container-login {
+  /* width: 500px; */
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+.input-group {
+  margin-bottom: 20px;
+}
+#dangnhap {
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(151, 151, 233);
+  color: #fff;
+}
+input {
+  width: 100%;
+  border-radius: 7px;
+  height: 50px;
+}
+#dangnhap:hover {
+  background-color: rgb(111, 95, 232);
+}
+a {
+  text-decoration: none;
+}
+#leak-sigup {
+  display: flex;
+}
+span {
+  align-items: center;
+  display: flex;
+}
+a:hover {
+  text-decoration: underline;
+}

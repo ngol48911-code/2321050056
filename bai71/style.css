@@ -1,3 +1,6 @@
+* {
+  font-family: sans-serif;
+}
 .modau {
   background: black;
   width: 100%;
@@ -7,15 +10,18 @@ header {
   background: black;
   position: fixed;
 }
-
+.node a {
+  text-decoration: none;
+  color: #fff;
+}
 .head {
   display: flex;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   background: black;
   color: white;
   height: 60px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-family: sans-serif;
 }

@@ -22,7 +22,7 @@
 </head>
 <body>
     <!-- the form o day la de khai bao du lieu gui tu trinh duyet len sever  -->
-    <form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">
+    <form action="index.php" method="POST">
         <!-- doi tuong $_SERVER['PHP_SELF'] tra  ve chinh cai ten  file php -->
          <!-- method = get la gui tham so qua trinh duyet  -->
           <!-- method post du lieu duoc dong goi thanh 1 doi tuong sau do gui di  -->
@@ -37,5 +37,15 @@
          </div>
          <input type="submit" value= "Submit" name="submit">
     </form>
+    <?php
+    if(isset($_POST['email']) && isset($_POST['password'])){
+        $tenDangNhap=$_POST['email'];
+        $password= $_POST['password'];
+        echo "$tenDangNhap<br>";
+        echo "$password<br>";
+
+        
+    }
+    ?>
 </body>
 </html>

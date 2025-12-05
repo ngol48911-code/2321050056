@@ -20,8 +20,6 @@
 </form>
 <?php
 if(isset($_POST['username']) && isset($_POST['password'])){
-
-
 $tenDangNhap = $_POST['username'];
 $matKhau = $_POST['password'];
   //echo $matKhau;

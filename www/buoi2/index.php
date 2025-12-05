@@ -14,19 +14,22 @@ if(!isset($_SESSION["username"])){
     header('location: login.php');
 }
 ?>
+<div>
+        <nav>
+          <ul class="">
+        <li class=""><a class="" href="index.php?page_layout=trangchu">Trang chủ</a></li>
+        <li class=""><a class="" href="index.php?page_layout=phim">Phim</a></li>
+        <li class=""><a class="" href="index.php?page_layout=theloai">Thể loại</a></li>
+        <li class=""><a class="" href="index.php?page_layout=quocgia">Quốc gia</a></li>
+        <li class=""><a class="" href="index.php?page_layout=nguoidung">Người dùng</a></li>
+    </ul>
+    <ul class="">
+        <li class=""><?php echo "xin chào " . $_SESSION["username"]; ?></li>
+        <li class=""><a class="" href="index.php?page_layout=dangxuat">Đăng xuất</a></li>
+        <li class=""><a class="" href="index.php?page_layout=themnguoidung">them nguoi dung </a></li>
+    </ul>
     <nav>
-      <ul class="">
-    <li class=""><a class="" href="index.php?page_layout=trangchu">Trang chủ</a></li>
-    <li class=""><a class="" href="index.php?page_layout=phim">Phim</a></li>
-    <li class=""><a class="" href="index.php?page_layout=theloai">Thể loại</a></li>
-    <li class=""><a class="" href="index.php?page_layout=quocgia">Quốc gia</a></li>
-    <li class=""><a class="" href="index.php?page_layout=nguoidung">Người dùng</a></li>
-</ul>
-<ul class="">
-    <li class=""><?php echo "xin chào " . $_SESSION["username"]; ?></li>
-    <li class=""><a class="" href="index.php?page_layout=dangxuat">Đăng xuất</a></li>
-</ul>
-<nav>
+</div>
 <?php
 if(isset($_GET['page_layout'])){
     switch($_GET['page_layout']){
@@ -46,8 +49,20 @@ if(isset($_GET['page_layout'])){
             include "nguoidung.php";
             break;
         case 'dangxuat':
-          include "dangxuat.php";
+          include "login.php";
           break;
+          case 'themnguoidung':
+            include "themnguoidung.php";
+            break;
+           case 'capnhatnguoidung':
+            include "capnhatnguoidung.php";
+            break;
+         case 'xoanguoidung':
+            include "xoanguoidung.php";
+            break;
+        case 'themphim':
+            include "themphim.php";
+            break;
           
     }
 }

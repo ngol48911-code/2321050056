@@ -6,7 +6,7 @@
     <title>php buoi2 </title>
 </head>
 <body>
-<form action="login.php" method="post">
+<form action="login.php" method="post" <?php echo $_SERVER['PHP_SELF']?>>
     <h1>Đăng nhập</h1>
     <div>
         <input type="text" name="username" placeholder="Tên đăng nhập">
@@ -25,15 +25,14 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     $matKhau = $_POST['password'];
     //Nếu tên đăng nhập là admin
     //Mật khẩu 123 thì cho phép người dùng vào trang chủ
-
     $sql = "select * from nguoi_dung where ten_dang_nhap = '$tenDangNhap' and mat_khau = '$matKhau'";
-
     $result = mysqli_query($conn, $sql);
-
     if (mysqli_num_rows($result) > 0) {
         session_start();
+       
         $_SESSION['username'] = $tenDangNhap;
-        header('location: trangchu.php');
+         header('location: trangchu.php');
+        // header('location: trangchu.php');
     } else {
         echo "<p class='warning'>Sai thong tin dang nhap</p>";
     }
